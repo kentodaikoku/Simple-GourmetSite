@@ -1,0 +1,443 @@
+html {
+    font-family: “游ゴシック“, YuGothic, “ヒラギノ角ゴ Pro W3”, “Hiragino Kaku Gothic Pro”, “メイリオ“, Meiryo, “ＭＳ Ｐゴシック“, “MS PGothic”, sans-serif;
+}
+
+body {
+    min-width: 1200px;
+}
+
+/*header/////////////////////////////////////////////////////////////////////////////////////*/
+header {
+    background-image: url(images/header.jpeg);
+    background-size: cover;
+    height: 500px;
+    width: 100%;
+    /*padding: 0 40px;*/
+}
+
+header h1 {
+    color: white;
+    font-size: 2.2rem;
+    font-weight: bold;
+    opacity: 0.8;
+}
+
+.width {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 20px 40px 0;
+}
+
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /*padding: 20px 40px 0;*/
+    /*min-width: 1200px;*/
+    /*margin: 0 auto;*/
+}
+
+.header-right {
+    /*padding-right: 25px;*/
+    color: white;
+}
+
+.header-right ul {
+    display: flex;
+    /*justify-content: space-around;*/
+}
+
+.header-right li {
+    padding: 0 15px;
+}
+
+.header-right li:last-child {
+    padding-right: 0;
+}
+
+.header-center {
+    margin-top: 50px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.header-title {
+    padding-bottom: 10px;
+}
+
+.header-form {
+    width: 800px;
+    height: 85px;
+    background-color: white;
+    opacity: 0.5;
+    /*position: relative;*/
+}
+
+.form {
+    position: absolute;
+    top: 78%;
+    font-size: 18px;
+    display: flex;
+    /*justify-content: center;*/
+    align-items: center;
+}
+
+.form h2 {
+    font-weight: bold;
+    padding-right: 5px;
+}
+
+.form input {
+    height: 35px;
+}
+
+.form input[type="text"] {
+    border: solid 1px black;
+    background-color: white;
+    width: 250px;
+}
+
+.form input[type="text"]::placeholder {
+    font-size: 12px;
+    text-align: left;
+}
+
+.form input[type="submit"] {
+    border: solid 1px black;
+    background-color: red;
+    color: white;
+    width: 80px;
+    /*background-image: url(images/icon07.png);*/
+    /*background-position: left;*/
+    /*background-repeat: no-repeat;*/
+}
+
+.form input[type="submit"]:first-child {
+    padding-left: 15px;
+    background-image: url(images/icon07.png);
+    background-position: 5px center;
+    background-repeat: no-repeat;
+}
+
+/*main///////////////////////////////////////////////////////////////////////////////////////*/
+.flexbox {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    /*margin: 20px 40px 0;*/
+    /*min-width: 1200px;*/
+    /*width: 1200px;*/
+    /*padding: 20px 40px 0;*/
+    /*margin: 0 auto;*/
+    /*padding: 20px 40px 0;*/
+}
+
+main {
+    width: 800px;
+    margin-right: 50px;
+}
+
+.topic:not(:first-child) {
+    padding-top: 20px;
+}
+
+.topic h2 {
+    width: 100%;
+    font-size: 24px;
+    font-weight: bold;
+    padding-left: 50px;
+    line-height: 2em;
+    margin-bottom: 20px;
+}
+
+.topic h2 span {
+    display: inline-block;
+    border-bottom: solid 3px orange;
+    padding-bottom: 2px;
+    width: 100%;
+}
+
+.where h2:first-child {
+    background-image: url(images/where.png);
+    background-position: left;
+    background-repeat: no-repeat;
+}
+
+.place h2:first-child {
+    background-image: url(images/place.png);
+    background-position: left;
+    background-repeat: no-repeat;
+}
+
+.genre h2:first-child {
+    background-image: url(images/genre.png);
+    background-position: left;
+    background-repeat: no-repeat;
+}
+
+.favorite h2:first-child {
+    background-image: url(images/favorite.png);
+    background-position: left;
+    background-repeat: no-repeat;
+}
+
+.reccomend h2:first-child {
+    background-image: url(images/reccomend.png);
+    background-position: left;
+    background-repeat: no-repeat;
+}
+
+.review h2:first-child {
+    background-image: url(images/review.png);
+    background-position: left;
+    background-repeat: no-repeat;
+}
+
+
+/* 各セクション//////////////////////////////////////////////////////////////////////////////////////////////////// */
+.where ul, .favorite ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.topic ul, .genre-flexbox, .reccomend-articles, .review-articles {
+    padding-left: 45px;
+}
+
+.where ul li a, .favorite ul li a{
+    display: inline-block;
+    text-align: center;
+    border: 1px solid #80808052;
+    padding: 5px 10px;
+    margin: 10px 7px 20px;
+    vertical-align: middle;
+}
+
+.where ul li a {
+    width: 65px;
+    font-size: 85%;
+}
+
+.place ul {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 200px;
+}
+
+.place ul li {
+    padding: 15px 5px 0 15px;
+}
+
+.place ul li a:before {
+    content: ">";
+    color: orange;
+}
+
+.genre-flexbox {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.genre a {
+    border: solid 1px #80808052;
+    text-align: center;
+}
+
+.genre figure figcaption {
+    padding: 10px 15px;
+}
+
+.genre figure figcaption span {
+    letter-spacing: 2px;
+}
+
+.reccomend small {
+    font-weight: normal;
+    font-size: 16px;
+    padding-left: 20px;
+}
+
+.reccomend-articles , .review-articles {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0 15px;
+}
+
+.reccomend-articles article, .review-articles article{
+    border: solid 1px #80808052;
+    background-color: #F5F5F5;
+}
+
+.reccomend-articles article:first-child, .review-articles article:first-child {
+    margin-right: 10px;
+}
+
+.reccomend-articles article:last-child, .review-articles article:last-child {
+    margin-left: 10px;
+}
+
+.reccomend-articles article figure {
+    text-align: center;
+}
+
+.reccomend-articles article figure img {
+    padding: 10px;
+}
+
+.reccomend-articles article figure figcaption {
+    font-weight: bold;
+    padding: 5px 0 10px;
+}
+
+.reccomend-articles article p {
+    text-align: left;
+    padding: 5px 5px 10px;
+    line-height: 1.5em;
+}
+
+.review-articles article {
+    width: 50%;
+}
+
+.users {
+    display: flex;
+    align-items: center;
+    border-bottom: solid 1px gray;
+    padding-bottom: 5px;
+}
+
+.user-pics {
+    padding: 7px;
+}
+
+.review .sections {
+    padding: 15px 10px 10px;
+}
+
+.review .section {
+    height: 220px;
+}
+
+.review .section h3 {
+    font-weight: bold;
+    font-size: 18px;
+    display: inline-block;
+    padding-bottom: 10px;
+}
+
+.review .section p {
+    display: inline-block;
+    line-height: 1.5em;
+    padding-bottom: 10px;
+}
+
+.review .pictures {
+    display: flex;
+    margin-top: 20px;
+}
+
+.review .pictures img {
+    width: 100%;
+}
+
+.review .pictures img:first-child {
+    padding-right: 5px;
+}
+
+.review .pictures img:last-child {
+    padding-left: 5px;
+}
+
+
+
+/*nav///////////////////////////////////////////////////////////////////////////////////////*/
+nav {
+    width: 270px;
+}
+
+.user-id, .advertisments img {
+    margin-bottom: 20px;
+}
+
+.advertisments img {
+    width: 100%;
+}
+
+.user-id {
+    background-color: #FFF8DC;
+    position: relative;
+    height: 220px;
+    width: 100%;
+}
+
+.nav-users {
+    position: absolute;
+    top: 13px;
+    left: 2px;
+    background-color: white;
+    margin: 0 20px 50px;
+    height: 200px;
+    width: 230px;
+    padding: 10px;
+}
+
+.user-what {
+    display: flex;
+    justify-content: space-between;
+    /*align-items: center;*/
+    padding: 10px 0;
+    border-bottom: solid 1px gray;
+}
+
+.user-what h2 {
+    padding-top: 5px;
+}
+
+.user-what:last-child {
+    border-bottom: none;
+}
+
+.point, .rank {
+    padding-left: 35px;
+    height: 30px;
+}
+
+.point:first-child {
+    background-image: url(images/point.png);
+    background-position: left;
+    background-repeat: no-repeat;
+}
+
+.rank:first-child {
+    background-image: url(images/ranking.png);
+    background-position: left;
+    background-repeat: no-repeat;
+}
+
+/*footer///////////////////////////////////////////////////////////////////////////////////////*/
+footer {
+    border-top: solid 2px #80808033;
+    margin-top: 50px;
+}
+
+.fotter-links ul {
+    display: flex;
+    justify-content: center;
+}
+
+.fotter-links li {
+    padding: 40px 20px;
+}
+
+.copyright {
+    text-align: center;
+    background-color: #dcd5d5;
+    padding: 20px 0;
+}
